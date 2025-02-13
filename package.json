@@ -1,0 +1,12 @@
+{
+  "name": "kaspa-logs-analyzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "kaspa": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

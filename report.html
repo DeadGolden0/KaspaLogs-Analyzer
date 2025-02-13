@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Kaspa Logs Analyzer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+    }
+    .header {
+      background-color: #4c5a63;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .header img {
+      height: 60px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+    .container h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .category-block {
+      margin-bottom: 30px;
+    }
+    .category-block h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .occurrence-item {
+      border-left: 5px solid #ccc;
+      background-color: #fafafa;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .occurrence-item pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-top: 5px;
+      background: #fff;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    .occurrence-item h4 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+    }
+    .severity-critique {
+      color: #a80000;
+      font-weight: bold;
+    }
+    .severity-eleve {
+      color: #d46b00;
+      font-weight: bold;
+    }
+    .severity-modere {
+      color: #bca300;
+      font-weight: bold;
+    }
+    .severity-faible {
+      color: #006600;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <!-- Nouveau placeholder -->
+    <img src="https://imgs.search.brave.com/NVZTig_oMf4VJzZ47oKZH1SeCovnmmPwnes0lfVyByU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb2lu/LWltYWdlcy5jb2lu/Z2Vja28uY29tL2Nv/aW5zL2ltYWdlcy8y/NTc1MS9sYXJnZS9r/YXNwYS1pY29uLWV4/Y2hhbmdlcy5wbmc_/MTY5NjUyNDgzNw" 
+         alt="Kaspa Placeholder Logo">
+    <h1>Kaspa Logs Analyzer</h1>
+  </div>
+
+  <div class="container">
+    <h2>Informations détectées</h2>
+    <p>
+      Voici les occurrences sensibles trouvées dans vos fichiers de logs, 
+      regroupées par catégorie et classées de la plus grave 
+      (<span class="severity-critique">critique</span>) 
+      à la moins grave (<span class="severity-faible">faible</span>).
+    </p>
+    <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+      <div class="category-block">
+        <h3>Catégorie : credentials (3 occurrences)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-critique">
+            Gravité : CRITIQUE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 38</div>
+          <div>Contenu :</div>
+          <pre>time="1970-01-01 00:00:58" level=warn pid=1170 msg="Pool: 0  URL: stratum+tcp://fr.jjpool.fr:7800	User: kaspa:qr36kkznh2d8j5hu7qm3fkadajlgjkxvrmmnyavu9q0tgavldkwtgep9yw93s  Password: CREOGn1234"</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-critique">
+            Gravité : CRITIQUE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 39</div>
+          <div>Contenu :</div>
+          <pre>time="1970-01-01 00:00:58" level=warn pid=1170 msg="Pool: 1  URL: stratum+tcp://fr.jjpool.fr:7800	User: kaspa:qr36kkznh2d8j5hu7qm3fkadajlgjkxvrmmnyavu9q0tgavldkwtgep9yw93s  Password: CREOGn1234"</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-critique">
+            Gravité : CRITIQUE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 40</div>
+          <div>Contenu :</div>
+          <pre>time="1970-01-01 00:00:58" level=warn pid=1170 msg="Pool: 2  URL: stratum+tcp://fr.jjpool.fr:7800	User: kaspa:qr36kkznh2d8j5hu7qm3fkadajlgjkxvrmmnyavu9q0tgavldkwtgep9yw93s  Password: CREOGn1234"</pre>
+        </div>
+        </div>
+      <div class="category-block">
+        <h3>Catégorie : personalData (4 occurrences)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-eleve">
+            Gravité : ELEVE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 24</div>
+          <div>Contenu :</div>
+          <pre>time="1970-01-01 00:00:58" level=notice pid=1170 msg="droa miner sn: YNAHF1UBDJDJA00X9"</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-eleve">
+            Gravité : ELEVE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 63</div>
+          <div>Contenu :</div>
+          <pre>time="2025-02-05 09:57:28" level=notice pid=1170 msg="droa board_sn:YNAHYRRBDJDJA02S4"</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-eleve">
+            Gravité : ELEVE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 64</div>
+          <div>Contenu :</div>
+          <pre>time="2025-02-05 09:57:28" level=notice pid=1170 msg="droa board_sn:YNAHYRRBDJDJA05JR"</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-eleve">
+            Gravité : ELEVE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 65</div>
+          <div>Contenu :</div>
+          <pre>time="2025-02-05 09:57:28" level=notice pid=1170 msg="droa board_sn:YNAHYRRBDJGBI01G7"</pre>
+        </div>
+        </div>
+      <div class="category-block">
+        <h3>Catégorie : servicePort (1 occurrence)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-eleve">
+            Gravité : ELEVE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 27</div>
+          <div>Contenu :</div>
+          <pre>time="1970-01-01 00:00:58" level=notice pid=1170 msg="start listen on 6060 ..."</pre>
+        </div>
+        </div>
+      <div class="category-block">
+        <h3>Catégorie : kernelVersion (1 occurrence)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : dmesg.log | Ligne : 2</div>
+          <div>Contenu :</div>
+          <pre>[    0.000000] [0] Linux version 4.9.38-tag- (jenkins@nomd-nomd-fwc-bj) (gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) ) #1 SMP PREEMPT Sat Jul 27 15:47:09 CST 2024</pre>
+        </div>
+        </div>
+      <div class="category-block">
+        <h3>Catégorie : firmware (4 occurrences)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : dmesg.log | Ligne : 22</div>
+          <div>Contenu :</div>
+          <pre>[    0.000000] [0] psci: PSCIv1.0 detected in firmware.</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : dmesg.log | Ligne : 99</div>
+          <div>Contenu :</div>
+          <pre>[    0.408804] [0] dmi: Firmware registration failed.</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 44</div>
+          <div>Contenu :</div>
+          <pre>time="2025-02-05 09:53:53" level=error pid=1170 msg="power fw_version = 0x1e08</pre>
+        </div>
+        
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : miner.log | Ligne : 47</div>
+          <div>Contenu :</div>
+          <pre>time="2025-02-05 09:55:03" level=notice pid=1170 msg="bitmain power fw version: 1e08"</pre>
+        </div>
+        </div>
+      <div class="category-block">
+        <h3>Catégorie : macAddress (1 occurrence)</h3>
+      
+        <div class="occurrence-item">
+          <h4 class="severity-modere">
+            Gravité : MODERE
+          </h4>
+          <div>Fichier : dmesg.log | Ligne : 206</div>
+          <div>Contenu :</div>
+          <pre>[    6.742695] [1] bm-dwmac 4510000.ethernet eth0: device MAC address d2:69:35:7e:d0:1e</pre>
+        </div>
+        </div>
+  </div>
+  <div class="footer">
+    Rapport généré automatiquement - 13/02/2025 16:07:45
+  </div>
+</body>
+</html>
