@@ -24,7 +24,7 @@
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/kaspa-logs-analyzer.git
+git clone https://github.com/DeadGolden0/kaspa-logs-analyzer.git
 cd kaspa-logs-analyzer
 ```
 
