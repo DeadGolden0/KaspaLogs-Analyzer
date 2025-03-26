@@ -9,7 +9,7 @@
 - [Usage](#-usage)
 - [Customization](#-customization)
 - [Caution](#-caution)
-- [Contribution](#-contribution)
+- [Contributing](#-contributing)
 - [License](#-license)
 - [Contact](#-contact)
 - [Support Me](#-support-me)
