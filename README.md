@@ -54,6 +54,10 @@ Modify or add new regex patterns based on what you want to detect in your logs.
 
 ## ⚠️ Caution
 
+> [!CAUTION]
+> I disclaim all responsibility for the use of this software. This software is provided for educational purposes only and should not be used for any other purpose. The user assumes full responsibility for the consequences of its use.
+
+> [!WARNING]
 > Storing sensitive data, hardcoded paths, or credentials directly in the codebase is a security risk and should be avoided.
 >
 > If you plan to extend this script to use environment variables or API keys, make sure to use a `.env` file and **never commit it** to version control. Add `.env` to your `.gitignore` file to keep it secure.
